@@ -1,0 +1,40 @@
+{
+  "name": "lumeweb/php-filesystem",
+  "description": "A filesystem for Web3",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Derrick Hammer",
+      "email": "contact@lumeweb.com"
+    }
+  ],
+  "require": {
+    "pcfreak30/skynet-php": "dev-master",
+    "paragonie/sodium_compat": "^1.17",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-http": "*"
+  },
+  "autoload": {
+    "files": [
+      "utilities.php",
+      "init.php"
+    ],
+    "psr-4": {
+      "Skynet\\Filesystem\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "/home/derrick/Projects/skynet/skynet-php"
+    }
+  ],
+  "require-dev": {
+    "flaviovs/timeit": "dev-master",
+    "anik/loguzz": "dev-master",
+    "analog/analog": "dev-master",
+    "monolog/monolog": "2.x-dev"
+  }
+}
